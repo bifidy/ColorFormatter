@@ -48,7 +48,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>return color with any coding format...</string>
+				<string>return color with any coding format</string>
 				<key>script</key>
 				<string>query = '{query}'
 
@@ -57,7 +57,7 @@ format_color(query)</string>
 				<key>subtext</key>
 				<string>enter hex color value here~</string>
 				<key>title</key>
-				<string>Color Formatter</string>
+				<string>ColorFormatter</string>
 				<key>type</key>
 				<integer>3</integer>
 				<key>withspace</key>
