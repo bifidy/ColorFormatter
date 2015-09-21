@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>bifidy.net</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>74254CF0-EB73-4988-A773-611C1C95983D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>BifidyCAPs</string>
+	<key>description</key>
+	<string>simple iOS tool</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>ColorFormatter</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>cl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>return color with any coding format...</string>
+				<key>script</key>
+				<string>query = '{query}'
+
+from color import format_color
+format_color(query)</string>
+				<key>subtext</key>
+				<string>enter hex color value here~</string>
+				<key>title</key>
+				<string>Color Formatter</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>74254CF0-EB73-4988-A773-611C1C95983D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>A simple tool to generate color code for iOS developing.</string>
+	<key>uidata</key>
+	<dict>
+		<key>74254CF0-EB73-4988-A773-611C1C95983D</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
+		<dict>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://bifidy.net</string>
+</dict>
+</plist>
