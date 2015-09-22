@@ -12,7 +12,7 @@
 
 不过，源代码依然可以作为制作 workflow 的 Demo，如果你有兴趣参考并自己编写一个 workflow 的话，这里有一篇相对详细的[教程](http://myg0u.com/python/2015/05/23/tutorial-alfred-workflow.html)，作者 [Manyu Gou](https://github.com/wswuai)。
 
-Demo 中唯一有捏捏价值的是 [xmlhandle](https://github.com/bifidy/ColorFormatter/blob/master/source/xmlhandle.py) 中用以生成 XML 的片段，因为 Alfred 的展示固定格式的 XML，在以后需要写下一个 workflow 的时候，可以直接拿来用。
+Demo 中唯一有捏捏价值的是 [xmlhandle](https://github.com/bifidy/ColorFormatter/blob/master/source/xmlhandle.py) 中用以生成 XML 的片段，因为 Alfred 展示需要固定格式的 XML，在写其它 workflow 的时候，可以直接拿来用。
 
 诶，其实我的 python 写的蛮烂，阅读代码时有任何不悦的感受，还望轻喷 `m(_ _)m`
 
