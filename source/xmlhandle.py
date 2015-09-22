@@ -3,6 +3,7 @@
 from xml.dom import minidom
 
 class Item(object):
+
     def __init__(self, title, subtitle, argument, 
             icon=None, autocomplete='autocompletex', uid=None):
         self.title = title    
@@ -11,11 +12,6 @@ class Item(object):
         self.argument = argument
         self.icon = icon
         self.autocomplete = autocomplete    
-
-    def validate(self):
-        for attr in [self.title, self.subtitle, self.argument]:
-            if not attr:
-                raise Exception, 'attrubute:%s is None' % attr.__name__
 
 def xml_string(items, first_uid=0):
     doc = minidom.Document()
@@ -27,7 +23,6 @@ def xml_string(items, first_uid=0):
     return doc.toprettyxml()
 
 def __itemAdapter(item):
-    item.validate
     doc = minidom.Document()
     _item = doc.createElement('item')
     _item.setAttribute('autocomplete', item.autocomplete)

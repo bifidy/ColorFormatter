@@ -8,10 +8,12 @@ def format_color(query):
                         argument=query)
     if not validate(query):
         print xml_string(items=[default_item])
+
     rgb_tuple = rgb_color('0x' + query[1:7])
     ui_color_item = Item(title=ui_color(rgb_tuple),
                          subtitle='UIColor',
                          argument=ui_color(rgb_tuple))
+    
     print xml_string(items=[ui_color_item])
 
 
