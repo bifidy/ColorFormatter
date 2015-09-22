@@ -1,9 +1,20 @@
-# ColorFormatter
-a Alfred workflow
+# [ColorFormatter](https://github.com/bifidy/ColorFormatter)
 
-## 起因
+## 简介
 
-晚上临时起意，打算写个 alfred 的 workflow 出来，因为之前已经做过功课，所以一晚上的时间把雏形搞定了。
+>附在顶上，[Colors](http://www.packal.org/workflow/colors) 是具有相同功能且更为完善的同类工具，如有相关需求，请优先尝试。
+
+这是一个简单的 [Alfred](http://alfredapp.com/) workflow，使用 python 编写。
+
+主要功能是将表示**颜色**的字符串格式化为代码，省去重复编写的麻烦。
+
+由于结尾讲到的原因，这只是一个实验品，不会再做更新。
+
+不过，源代码依然可以作为制作 workflow 的 Demo，如果你有兴趣参考并自己编写一个 workflow 的话，这里有一篇相对详细的[教程](http://myg0u.com/python/2015/05/23/tutorial-alfred-workflow.html)，作者 [Manyu Gou](https://github.com/wswuai)。
+
+Demo 中唯一有捏捏价值的是 [xmlhandle](https://github.com/bifidy/ColorFormatter/blob/master/source/xmlhandle.py) 中用以生成 XML 的片段，因为 Alfred 的展示固定格式的 XML，在以后需要写下一个 workflow 的时候，可以直接拿来用。
+
+诶，其实我的 python 写的蛮烂，阅读代码时有任何不悦的感受，还望轻喷 `m(_ _)m`
 
 ## 使用方法
 
@@ -11,21 +22,22 @@ a Alfred workflow
 
 1. 下载 `ColorFormatter.alfredworkflow`，双击安装;
 2. 默认的 keyword 是 `cl`，然后回车确定，输入（粘贴更佳）符合格式 (`#xxxxxx`) 的十六进制颜色值
-3. 根据右侧快捷键选择对应的颜色格式（第一版只有 Objective-C 的 UIColor），好了，它已经在你的粘贴版里了。
+3. 根据右侧快捷键选择对应的颜色格式（好吧，只有 Objective-C 的 `UIColor` = =），好了，它已经在你的粘贴版里了。
 4. 粘贴到需要的位置呗~
 
-## 以后
+## 故事 
 
-第一版做的相对粗糙，接下来的时间，首先会补齐常见的 iOS 颜色格式。
+这其实是一件比较悲剧的事情，第一天写了个雏形，心急火燎的发出来，坐等掌声一片。然后第一个回复是 `这个之前早就有了` = =
 
-## 反馈
+然后我抛砖引玉的获得了一个功能完善到反正我是没挑出来毛病的链接 [Colors](http://www.packal.org/workflow/colors)
 
-如果有意关注，请勿吝啬 Star。
-如果有任何意见，欢迎 issue。
+本着不重复造轮子的原则，如果没有什么别的需要，这个版本就是最终形态了。
 
-## 接下来
+最后不得不说一句，最大的收获是 GET 到了一个很 nice 的 Alfred 资源网站:[http://www.packal.org](http://www.packal.org)。
 
-明天还要上班，其余的废话以后再写。
+记得有句什么诗是用来歌颂这种“关一扇门，开一扇窗”的狗屎运的，一时想不起，请看官自行脑补好了(≖ ‿ ≖)✧
 
----
-2015年09月22日 By Bifidy
+就是这样，再会。
+
+
+
