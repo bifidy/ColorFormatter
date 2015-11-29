@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+from os import sys
+reload(sys) 
+sys.setdefaultencoding( "utf-8" )
 from xml.dom import minidom
 
 class Item(object):

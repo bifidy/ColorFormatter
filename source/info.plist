@@ -34,11 +34,11 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>69</integer>
 				<key>keyword</key>
-				<string>cl</string>
+				<string>#</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -52,8 +52,8 @@
 				<key>script</key>
 				<string>query = '{query}'
 
-from color import format_color
-format_color(query)</string>
+from color import Color
+Color(query).show()</string>
 				<key>subtext</key>
 				<string>enter hex color value here~</string>
 				<key>title</key>
@@ -61,7 +61,7 @@ format_color(query)</string>
 				<key>type</key>
 				<integer>3</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -74,9 +74,9 @@ format_color(query)</string>
 			<key>config</key>
 			<dict>
 				<key>autopaste</key>
-				<false/>
+				<true/>
 				<key>clipboardtext</key>
-				<string></string>
+				<string>{query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
